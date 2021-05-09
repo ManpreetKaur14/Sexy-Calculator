@@ -9,7 +9,8 @@
     content: "";
     min-height: 97vh; 
     width: 100%;
-    background-image:url(images/wp5213014-kawaikereba-hentai-demo-suki-ni-natte-kuremasuka-wallpapers.jpg);
+    
+    background-image: linear-gradient(rgb(4, 9, 30,0.6),rgb(4, 9, 30,0.6)),url('images/darker.jpg');
     opacity: 1;
     position: absolute;
     background-size: cover;
@@ -23,11 +24,11 @@
     width: 320px;
     border: 3px solid #EFA18A;
     border-radius: 10px;
-    float:right;
-    margin-right: 250px;
+    float:left;
+    margin-left: 250px;
     top: 60px;
     position: relative;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.4);
     /* opacity: 1 !important; */
 }
 .result{
@@ -41,6 +42,7 @@ input{
     background-color: transparent;
     border-width: 0px;
     float:right;
+    color: white;
     text-align: right;
     grid-column: span 4;
     font-size: 50px;
@@ -62,7 +64,7 @@ button{
     margin: 6px;
     float: left;
     font-size: 25px;
-    color: #222121;
+    color: #ffffff;
     border: 3px solid #EFA18A;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
