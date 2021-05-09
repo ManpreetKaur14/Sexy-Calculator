@@ -1,0 +1,84 @@
+.background{
+    min-height: 97vh; 
+    width: 100%;
+    background-position: centre;
+    background-size: cover;
+    position: relative;
+}
+.background::before{
+    content: "";
+    min-height: 97vh; 
+    width: 100%;
+    background-image:url(images/wp5213014-kawaikereba-hentai-demo-suki-ni-natte-kuremasuka-wallpapers.jpg);
+    opacity: 1;
+    position: absolute;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.calculator{
+    height: 520px;
+    width: 320px;
+    border: 3px solid #EFA18A;
+    border-radius: 10px;
+    float:right;
+    margin-right: 250px;
+    top: 60px;
+    position: relative;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    /* opacity: 1 !important; */
+}
+.result{
+    height: 170px;
+}
+input{
+    height: 70px;
+    width: 300px;
+    padding-top: 100px;
+    padding-right: 20px;
+    background-color: transparent;
+    border-width: 0px;
+    float:right;
+    text-align: right;
+    grid-column: span 4;
+    font-size: 50px;
+}
+.keyboard{
+    height: 350px;
+    margin-left: 25px;
+    float: left; 
+   
+}
+
+button{
+    height: 50px;
+    background-color: transparent;
+    border-width: 0px;
+    font-weight: bolder;
+    width: 50px;
+    border-radius: 25px;
+    margin: 6px;
+    float: left;
+    font-size: 25px;
+    color: #222121;
+    border: 3px solid #EFA18A;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+button:hover{
+    border: 3px solid #EFA18A;
+    background: #EFA18A;
+    transition: .5s;
+}
+.fas{
+    color:#724545;
+    font-size: 40px;
+    margin-top: 500px;
+    float: right;
+}
+.fas:hover{
+    /* border: 3px solid #EFA18A; */
+    color: #EFA18A;
+    transition: .2s;
+}

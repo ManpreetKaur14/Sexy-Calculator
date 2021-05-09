@@ -1,75 +1,44 @@
 .background{
-    min-height: 97vh; 
+    min-height: 97vh;
     width: 100%;
     background-position: centre;
-    background-size: cover;
+    background-size:cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(4, 9, 30,0.8),rgb(4, 9, 30,0.8)),url('images/welcome1.jpg');
 }
-.background::before{
-    content: "";
-    min-height: 97vh; 
-    width: 100%;
-    background-image:url(images/wp5213014-kawaikereba-hentai-demo-suki-ni-natte-kuremasuka-wallpapers.jpg);
-    opacity: 1;
+h2{
+    position: relative;
+    font-size: 14vw;
+    color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-text-stroke: 0.3vw #724545;
+}
+h2::before{
+    content: attr(data-text);
     position: absolute;
-    background-size: cover;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #EFA18A;
+    -webkit-text-stroke: 0vw #724545;
+    border-right: 2px solid #EFA18A;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
 }
-.calculator{
-    height: 520px;
-    width: 320px;
-    border: 3px solid #EFA18A;
-    border-radius: 10px;
-    float:right;
-    margin-right: 250px;
-    top: 60px;
-    position: relative;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
-    /* opacity: 1 !important; */
-}
-.result{
-    height: 170px;
-}
-input{
-    height: 70px;
-    width: 300px;
-    padding-top: 100px;
-    padding-right: 20px;
-    background-color: transparent;
-    border-width: 0px;
-    float:right;
-    text-align: right;
-    grid-column: span 4;
-    font-size: 50px;
-}
-.keyboard{
-    height: 350px;
-    margin-left: 25px;
-    float: left; 
-   
-}
-
-button{
-    height: 50px;
-    background-color: transparent;
-    border-width: 0px;
-    font-weight: bolder;
-    width: 50px;
-    border-radius: 25px;
-    margin: 6px;
-    float: left;
-    font-size: 25px;
-    color: #222121;
-    border: 3px solid #EFA18A;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-button:hover{
-    border: 3px solid #EFA18A;
-    background: #EFA18A;
-    transition: .5s;
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
 }
 .fas{
     color:#724545;
